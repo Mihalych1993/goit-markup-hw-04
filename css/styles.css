@@ -77,11 +77,20 @@ text-transform: uppercase;
 
 .link-studio {
     padding: 24px 0;
+   
+
+}
+.link-studio  {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    color:  #2E2F42;
     position: relative;
     color: #404bbf;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .link-studio::after {
     content: "";
@@ -91,16 +100,15 @@ text-transform: uppercase;
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
+    width: 100%;
+    display: block;
 
 }
 
-
-.studio-nav a {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5; 
-    letter-spacing: 0.02em;
-    color:  #2E2F42;
+    .link-studio:active {
+        position: relative;
+        color: #404bbf;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .studio-nav a:focus , 
@@ -274,9 +282,9 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     padding: 32px 0;
 }
 .soc-links {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
 }
 .soc-links-item {
     width: 40px;
@@ -433,7 +441,7 @@ background:  #FFF;
 .footer-icons {
     width: 40px;
     height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 
 }
 
@@ -445,6 +453,8 @@ background:  #FFF;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .icons-link:hover ,
 .icons-link:focus {
